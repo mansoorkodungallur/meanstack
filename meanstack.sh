@@ -19,10 +19,10 @@ sudo service mongod status
 
 #to install nvm  and npm
 curl -o https://raw.githubusercontent.com/creationix/nvm/master/install.sh install0.sh
-sudo bash install0.sh
+ bash install0.sh
 sudo apt-get install -y build-essential
 curl -o  https://npmjs.org/install.sh install1.sh 
-sudo bash install1.sh 
+ bash install1.sh 
 
 #installing nodejs
  nvm install 8.9.1
