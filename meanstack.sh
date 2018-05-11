@@ -1,5 +1,6 @@
 #!/bin/bash
 #script to install meanstack on ubunut 16 lts
+#!!!!!!!!!!!!!!!!!!!!run this script in sudo!!!!!!!!!!!!!!!!!!!!!!!!!! [[[[[sudo ./meanstack.sh]]]]]]]]]
 
 #installing  vim terminator
 sudo apt-get update -y
@@ -20,10 +21,14 @@ sudo service mongod status
 #to install nvm  and npm
 curl  https://raw.githubusercontent.com/creationix/nvm/master/install.sh  -o install0.sh
 sudo chmod u+x install0.sh
-
 ./install0.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
 sudo apt-get install -y build-essential
-#not working anymore
+
 curl    https://npmjs.com/install.sh  -o install1.sh  
 sudo chmod u+x install1.sh
 ./install1.sh 
