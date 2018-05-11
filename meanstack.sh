@@ -23,9 +23,12 @@ sudo chmod u+x install0.sh
 
 ./install0.sh
 sudo apt-get install -y build-essential
-curl    https://npmjs.org/install.sh  -o install1.sh  
+#not working anymore
+curl    https://npmjs.com/install.sh  -o install1.sh  
 sudo chmod u+x install1.sh
 ./install1.sh 
+
+
 
 #installing nodejs
  nvm install 8.9.1
