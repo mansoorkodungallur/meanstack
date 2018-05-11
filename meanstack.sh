@@ -2,8 +2,8 @@
 #script to install meanstack on ubunut 16 lts
 
 #installing  vim terminator
-sudo apt-get update
-sudo apt-get install vim terminator
+sudo apt-get update -y
+sudo apt-get install vim terminator curl -y 
 
 
 #installing mongodb
@@ -18,23 +18,23 @@ sudo service mongod status
 
 
 #to install nvm  and npm
-curl -o https://raw.githubusercontent.com/creationix/nvm/master/install.sh
-sudo bash install.sh
+curl -o https://raw.githubusercontent.com/creationix/nvm/master/install.sh install0.sh
+sudo bash install0.sh
 sudo apt-get install -y build-essential
-curl https://npmjs.org/install.sh 
-sudo bash install.sh 
+curl -o  https://npmjs.org/install.sh install1.sh 
+sudo bash install1.sh 
 
 #installing nodejs
-sudo nvm install 8.9.1
-sudo nvm use 8.9.1
-sudo npm init
-sudo npm install -g npm-check
-sudo npm install -g @angular/cli
-sudo npm install -g @angular/cli@latest
-sudo npm install -g typescript
-sudo npm install angular --save
-sudo npm install express --save
-sudo npm link express 
+ nvm install 8.9.1
+ nvm use 8.9.1
+ npm init
+ npm install -g npm-check
+ npm install -g @angular/cli
+ npm install -g @angular/cli@latest
+ npm install -g typescript
+ npm install angular --save
+ npm install express --save
+ npm link express 
 #instaling node js
 #echo starting nodejs installation
 #curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
@@ -46,7 +46,7 @@ sudo npm link express
 
 #installing npm boswer gulp
 #sudo npm install -g bower 
-sudo npm install -g gulp
+npm install -g gulp
 
  #ng new helloApp
  #ng serve --open
