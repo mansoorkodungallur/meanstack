@@ -20,7 +20,7 @@ sudo service mongod status
 
 #to install nvm  and npm
 curl  https://raw.githubusercontent.com/creationix/nvm/master/install.sh  -o install0.sh
-sudo chmod u+x install0.sh
+sudo chmod 755 install0.sh
 ./install0.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -30,7 +30,7 @@ export NVM_DIR="$HOME/.nvm"
 sudo apt-get install -y build-essential
 
 curl    https://npmjs.com/install.sh  -o install1.sh  
-sudo chmod u+x install1.sh
+sudo chmod 755 install1.sh
 ./install1.sh 
 
 
