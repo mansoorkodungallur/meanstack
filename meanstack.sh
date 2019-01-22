@@ -1,9 +1,10 @@
 #!/bin/bash
 #script to install meanstack on ubunut 16 lts
 #!!!!!!!!!!!!!!!!!!!!run this script in sudo!!!!!!!!!!!!!!!!!!!!!!!!!! [[[[[sudo ./meanstack.sh]]]]]]]]]
-
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!sudo bash mean.sh
 #installing  vim terminator
 sudo apt-get update -y
+sudo apt-get install -y build-essential
 sudo apt-get install vim terminator curl -y 
 
 
@@ -26,14 +27,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-
-sudo apt-get install -y build-essential
-
 curl    https://npmjs.com/install.sh  -o install1.sh  
 sudo chmod 755 install1.sh
 ./install1.sh 
-
-
 
 #installing nodejs
  nvm install 8.9.1
@@ -46,6 +42,11 @@ sudo chmod 755 install1.sh
  npm install angular --save
  npm install express --save
  npm link express 
+
+#installing npm boswer gulp
+#sudo npm install -g bower 
+npm install -g gulp
+
 #instaling node js
 #echo starting nodejs installation
 #curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
@@ -54,10 +55,6 @@ sudo chmod 755 install1.sh
 #git clone https://github.com/linnovate/mean.git
 #cd mean
 #npm install
-
-#installing npm boswer gulp
-#sudo npm install -g bower 
-npm install -g gulp
 
  #ng new helloApp
  #ng serve --open
