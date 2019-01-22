@@ -47,6 +47,7 @@ sudo chmod 755 install1.sh
 #sudo npm install -g bower 
 npm install -g gulp
 
+echo -------------------------------------------------install completed-------------------------------
 #instaling node js
 #echo starting nodejs installation
 #curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
@@ -58,7 +59,4 @@ npm install -g gulp
 
  #ng new helloApp
  #ng serve --open
-
-
-
-~                               
+               
