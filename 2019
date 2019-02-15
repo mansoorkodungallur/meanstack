@@ -48,5 +48,8 @@ npm install -g gulp
 
 
  sudo chown -R $USER:$(id -gn $USER) /home/wsa/.config 
+ 
+ sudo apt install -y mongodb
+
 
 
